@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d =new Date();
+        theDay = d.getDay();
+        switch (theDay){
+            case 1: document.write("L"); break;
+            case 2: document.write("<b>M</b>"); break;
+            case 3: document.write("Mie"); break;
+            case 4: document.write("J"); break;
+            case 5: document.write("V"); break;
+            case 6: document.write("S"); break;
+            case 0: document.write("D"); break;
+            default: document.write("Saptamana"); break;
+          }
+
+    </script>
+</body>
+</html>
