@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="demo"></section>
+    <script>
+        
+        function drawTags( numeTag,numeClasa,continut,repetaru){
+            for(let i=1;i<=repetaru;i++){
+             createTag(numeTag=content)
+             
+            }
+        }
+        function createTag(tname,content){
+            const newTag = document.createElement(tname,content);
+            newTag.innerHTML =content;
+            document.getElementById("demo").appendChild(newTag)
+        }
+        drawTags('h1','demo','Buna ziua',5)
+    </script>
+</body>
+</html>
