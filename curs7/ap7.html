@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1> dsadas</h1>
+<p id="demo"></p>
+<body>
+    <script>
+        let text =`JavaScript este un limbaj de programare diferit de 
+        limbajul Java si nici nu are legatura JavaScript ,JavaScript
+        cu insula Java`;
+        let pattern=/JavaScript/mgi;
+        let result = text.match(pattern);
+        document.getElementById("demo").innerHTML = result;
+
+        let str =`1 este 
+2 maini
+0 cod
+3 crai
+c
+a
+S`;
+        console.log(str.match(/^[1-9a-z]/gmi));
+        console.log(str.match(/^[1-9]/g));
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sursa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem exercitationem
+         hic totam cupiditate placeat impedit eum iste itaque, commodi ex voluptate 
+         blanditiis rem dignissimos veniam eveniet sed. Blanditiis, nobis consequuntur
+         Officiis reprehenderit doloremque in deleniti vitae. Illo unde 
+         nostrum aliquam. Qui cumque ipsa dolorem at, iste, quidem neque enim moles
+         tias, recusandae porro ipsum aut tenetur sed hic corporis! Assumenda, accusamus 
+         Commodi ratione earum recusandae sed corporis odit facere delectus sint molestias
+         est iusto atque iure consequuntur voluptate, suscipit eum in tenetur architecto
+         Itaque tempora nesciunt illum, sapiente atque veritatis? Necessitatibus, tenetur! Rerum 
+         +12512
+         33
+         +12512
+         voluptatibus quia laudantium earum animi nam fuga, sit officia. Aut accusamus quae ducimus temporibus totam saepe earum. Dignissimos, ex consectetur!</p>
+  <p id="destinatie"></p>
+<script>
+let sursa =document.getElementById('sursa').innerHTML;
+console.log(sursa);
+let pattern =/[\+][0-9\s]{10,18}/g;
+
+let result =sursa.match(pattern);
+document.getElementById("destinatie").innerHTML= result;
+</script>
+
+</body>
+</html>
