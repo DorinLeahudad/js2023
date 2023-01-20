@@ -10,6 +10,21 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 function diplayMenuItems(menuItems) {
+    let displayMenu =menuItems.map(function(item)
+   return` <article class="menu-item">
+    <img src="./img/item-10.jpeg" alt="menu item" class="photo" />
+    <div class="item-info">
+      <header>
+        <h4>buttermilk pancakes</h4>
+        <h4 class="price">15 RON</h4>
+      </header>
+      <p class="item-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+        laboriosam excepturi! Quo, officia.
+      </p>
+    </div>
+  </article>`
    
 }
 function displayMenuButtons(){
